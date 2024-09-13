@@ -10,7 +10,10 @@ class TestOperation:
         assert self.calc.adding(1, 1) == 2
 
     def test_subtracting_success(self):
-        assert self.calc.subtracting(3, 1) == 2
+        assert self.calc.subtraction(3, 1) == 2  # Исправлено здесь
+
+    def test_multiply_calculate_correctly(self):
+        assert self.calc.multiply(2, 2) == 4
 
     def test_zero_division(self):
         with pytest.raises(ZeroDivisionError):
